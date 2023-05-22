@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  app:
+    build: ./docker/php-octane
+    ports:
+      - "8004:8000"
+    volumes:
+      - .:/var/www/html
